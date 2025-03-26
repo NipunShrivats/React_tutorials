@@ -48,4 +48,29 @@ export default function ConditionalRendring_3() {
   //   </>
   // );
   // ---------------------------
+
+  // using && operator
+  // --> react does not render "false", "null", "undefined" or "NaN" in DOM,
+  // these values if used in JSX will display nothing
+
+  const students = [1, 2];
+  return (
+    <>
+      {/* in && operation, left operand is utililized first but will not move forward if its false */}
+
+      {/* this is a problem that it displays 0 instead of giving "not found" statement */}
+      {/* <p>{students.length && "No student found"}</p> */}
+
+      {/* solution down here */}
+      {/* 1. */}
+      {/* <p>{students.length === 0 && "No student found"}</p> */}
+      {/* 2. */}
+      {/* <p>{!students.length && "No student found"}</p> */}
+      {/* 3. */}
+      <p>{Boolean(!students.length) && "No student found"}</p>
+
+      <p>Number of students: {students.length}</p>
+    </>
+  );
+  // ---------------------------
 }
