@@ -28,7 +28,7 @@ const NetflixCard = (props) => {
 
 // ------------------------------
 
-export default function ReactBasic_tut_1() {
+export default function Components_Fragments_1() {
   return (
     <>
       <NetflixCard title={"faltu title1"} rating={8.2} />
