@@ -26,15 +26,26 @@ export default function ConditionalRendring_3() {
   // );
   // ---------------------------
   // type3
-  let canWatch = "Not Available";
-  if (age >= 18) {
-    canWatch = "Watch Now";
-  }
-  return (
-    <>
-      <h2>{canWatch}</h2>
-    </>
-  );
+  // let canWatch = "Not Available";
+  // if (age >= 18) {
+  //   canWatch = "Watch Now";
+  // }
+  // return (
+  //   <>
+  //     <h2>{canWatch}</h2>
+  //   </>
+  // );
 
+  // ---------------------------
+  // type4
+  // const canWatch = () => {
+  //   if (age >= 18) return "watch now";
+  //   return "not available";
+  // };
+  // return (
+  //   <>
+  //     <h2>{canWatch()}</h2>
+  //   </>
+  // );
   // ---------------------------
 }
