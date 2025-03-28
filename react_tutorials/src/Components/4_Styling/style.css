@@ -1,0 +1,13 @@
+.good {
+    background-color: green;
+}
+
+.avg {
+    background-color: red;
+}
+
+.extra {
+    border: 2px solid black;
+    padding: 2px;
+    border-radius: 2rem;
+}
