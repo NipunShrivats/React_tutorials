@@ -6,7 +6,7 @@ import ImportExport from "./Components/1_Basic/Import_Export_4/Master";
 import NetflixSeries from "./Components/2_map_in_JSX/Main";
 import PropsInJSX from "./Components/3_Props/Main";
 import ConditionalStyling from "./Components/4_Styling/Conditional_Styling";
-// import ConditionalStyling from "./Components/4_Styling/Conditional_Styling";
+import Module from "./Components/4_Styling/CSS_Modules/Module";
 
 export default function App() {
   return (
@@ -21,8 +21,8 @@ export default function App() {
       {/* ---------------------- 3 props ---------------------- */}
       {/* <PropsInJSX /> */}
       {/* ---------------------- 4 Conditional Styling ---------------------- */}
-
-      <ConditionalStyling />
+      {/* <ConditionalStyling /> */}
+      <Module />
     </>
   );
 }
