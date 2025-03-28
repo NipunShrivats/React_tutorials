@@ -1,0 +1,52 @@
+[
+  {
+    "name": "the haunting of hill house",
+    "id": "001",
+    "img_url": "http://localhost:5175/src/assets/NetflixSeriesImages/1.jpg",
+    "rating": "9.8",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    "cast": ["jack becham", "john benjamin", "kunal kapoor"],
+    "genre": ["horror", "comedy"],
+    "watch_url": "https://www.netflix.com/in/title/80189221?source=35"
+  },
+  {
+    "name": "dark",
+    "id": "002",
+    "img_url": "http://localhost:5175/src/assets/NetflixSeriesImages/2.jpg",
+    "rating": "9.9",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    "cast": ["jack becham", "john benjamin", "kunal kapoor"],
+    "genre": ["horror", "thriller", "sci-fi"],
+    "watch_url": "https://www.netflix.com/in/title/80100172?source=35"
+  },
+  {
+    "name": "wednesday",
+    "id": "003",
+    "img_url": "http://localhost:5175/src/assets/NetflixSeriesImages/3.jpg",
+    "rating": "8.8",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    "cast": ["jack becham", "john benjamin", "kunal kapoor"],
+    "genre": ["thriller", "sci-fi"],
+    "watch_url": "https://www.netflix.com/in/title/81231974?source=35"
+  },
+  {
+    "name": "the residence",
+    "id": "004",
+    "img_url": "http://localhost:5175/src/assets/NetflixSeriesImages/4.jpg",
+    "rating": "6.5",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    "cast": ["jack becham", "john benjamin", "kunal kapoor"],
+    "genre": ["thriller"],
+    "watch_url": "https://www.netflix.com/in/title/81005297?source=35"
+  },
+  {
+    "name": "the witcher",
+    "id": "005",
+    "img_url": "http://localhost:5175/src/assets/NetflixSeriesImages/5.jpg",
+    "rating": "8.9",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    "cast": ["jack chaurasia", "amul milky milk", "dogesh kumar"],
+    "genre": ["thriller"],
+    "watch_url": "https://www.netflix.com/in/title/80189685?source=35"
+  }
+]
