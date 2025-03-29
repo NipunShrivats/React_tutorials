@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main-div {
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 90vh;
+    text-align: center;
+    font-size: larger;
+}
+
+.g-div {
+    border: 5px solid black;
+    background-color: rgb(53, 132, 230);
+    padding: 4rem;
+    width: 80%;
+}
+
+.p-div {
+    border: 5px solid black;
+    background-color: rgb(68, 196, 68);
+    padding: 4rem;
+}
+
+.c-div {
+    border: 5px solid black;
+    background-color: rgb(224, 224, 86);
+    padding: 4rem;
+}
