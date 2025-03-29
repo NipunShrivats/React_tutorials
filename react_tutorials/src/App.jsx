@@ -9,24 +9,39 @@ import ConditionalStyling from "./Components/4_Styling/Conditional_styling/Condi
 import Module from "./Components/4_Styling/CSS_Modules/Module";
 import StyledComponent from "./Components/4_Styling/Styled_Components/Styled_Components";
 import Tailwind from "./Components/4_Styling/Tailwind/Tailwind";
+import EventHandling from "./Components/5_Event_Handling/EventHandling_1";
+import EventsAsProps from "./Components/5_Event_Handling/EventsAsProps_2";
+import EventsPropagation from "./Components/5_Event_Handling/EventsPropagation_3";
 
 export default function App() {
   return (
     <>
       {/* ---------------------- 1 Basic ---------------------- */}
+
       {/* <ReactBasic_tut_1 /> */}
       {/* <DynamicValues_2 /> */}
       {/* <ConditionalRendring_3 /> */}
       {/* <ImportExport /> */}
+
       {/* ---------------------- 2 react looping - map() method ---------------------- */}
+
       {/* <NetflixSeries /> */}
+
       {/* ---------------------- 3 props ---------------------- */}
+
       {/* <PropsInJSX /> */}
+
       {/* ---------------------- 4 Conditional Styling ---------------------- */}
+
       {/* <ConditionalStyling /> */}
       {/* <Module /> */}
       {/* <StyledComponent /> */}
-      <Tailwind />
+      {/* <Tailwind /> */}
+
+      {/* ---------------------- 5 EventHandling ---------------------- */}
+      {/* <EventHandling /> */}
+      {/* <EventsAsProps /> */}
+      <EventsPropagation />
     </>
   );
 }
