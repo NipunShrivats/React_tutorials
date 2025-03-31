@@ -45,7 +45,13 @@ export default function App() {
       {/* <EventsPropagation /> */}
       {/* ---------------------- 6. React Hooks ---------------------- */}
       {/* ---------- a. State ----------*/}
-      <ReactState />
+      {/* <ReactState /> */}
+      {/* <SiblingComponent /> */}
     </>
   );
 }
+
+// function SiblingComponent() {
+//   console.log("Sibling Component rendered");
+//   return <div>Sibling Component</div>;
+// }
