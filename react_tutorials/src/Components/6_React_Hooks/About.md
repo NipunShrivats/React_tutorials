@@ -15,4 +15,11 @@ Hooks - are the functions that helps to handle different events in React.
 Q. Why the value does not set back to its original value after re-render in react.js?
 ans. it uses the current state to change to the next value, uses initial value only the first time.
 
+// Derived State??
+
+1. Can be computed based on other state or props --OR--
+2. If any variables value is dependent on a state or props.
+3. Not directly stored in component's state but calculated when needed.
+4. Helps to avoid duplicacy - keeeps state sikmpler and manageable.
+
 <!-- ---------------------------- -->
