@@ -20,6 +20,7 @@ import EventsPropagation from "./Components/5_Event_Handling/EventsPropagation_3
 // -----------------------------------------------------
 import ReactState from "./Components/6_React_Hooks/1_React_State/Main";
 import DerivedState from "./Components/6_React_Hooks/1_React_State/DerivedState";
+import LiftingStateUp from "./Components/6_React_Hooks/1_React_State/LiftingStateUp";
 
 // -----------------------------------------------------
 
@@ -49,7 +50,8 @@ export default function App() {
       {/* <ReactState /> */}
       {/* <SiblingComponent /> */}
 
-      <DerivedState />
+      {/* <DerivedState /> */}
+      <LiftingStateUp />
     </>
   );
 }
