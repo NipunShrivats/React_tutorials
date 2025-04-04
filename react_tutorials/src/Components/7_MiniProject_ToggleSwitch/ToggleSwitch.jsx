@@ -9,14 +9,15 @@ export default function ToggleSwitch() {
   let handleToggleSwitch = () => {
     setIsOn(!isOn);
   };
+
+  const checkIsOn = isOn ? "on" : "off";
+  const checkColor = isOn ? "green" : "red";
+
   return (
     <>
       <div className="toggle-switch" onClick={handleToggleSwitch}>
-        <div
-          className="switch"
-          style={{ backgroundColor: isOn ? "green" : "red" }}
-        >
-          <span className={`switch-state ${isOn ? "on" : "off"}`}>
+        <div className="switch" style={{ backgroundColor: checkColor }}>
+          <span className={`switch-state ${checkIsOn}`}>
             {isOn ? <MdFlashlightOn /> : <MdFlashlightOff />}
           </span>
         </div>
