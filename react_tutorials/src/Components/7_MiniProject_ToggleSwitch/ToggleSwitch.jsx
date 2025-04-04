@@ -12,7 +12,10 @@ export default function ToggleSwitch() {
   return (
     <>
       <div className="toggle-switch" onClick={handleToggleSwitch}>
-        <div className="switch">
+        <div
+          className="switch"
+          style={{ backgroundColor: isOn ? "green" : "red" }}
+        >
           <span className={`switch-state ${isOn ? "on" : "off"}`}>
             {isOn ? <MdFlashlightOn /> : <MdFlashlightOff />}
           </span>
