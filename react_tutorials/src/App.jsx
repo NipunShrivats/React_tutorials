@@ -23,6 +23,8 @@ import DerivedState from "./Components/6_React_Hooks/1_React_State/DerivedState"
 import LiftingStateUp from "./Components/6_React_Hooks/1_React_State/LiftingStateUp";
 
 // -----------------------------------------------------
+import ToggleSwitch from "./Components/7_MiniProject_ToggleSwitch/ToggleSwitch";
+// -----------------------------------------------------
 
 export default function App() {
   return (
@@ -51,7 +53,9 @@ export default function App() {
       {/* <SiblingComponent /> */}
 
       {/* <DerivedState /> */}
-      <LiftingStateUp />
+      {/* <LiftingStateUp /> */}
+      {/* ---------------------- 7. Mini Project - ToggleSwitch ---------------------- */}
+      <ToggleSwitch />
     </>
   );
 }
