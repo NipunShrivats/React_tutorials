@@ -22,4 +22,14 @@ ans. it uses the current state to change to the next value, uses initial value o
 3. Not directly stored in component's state but calculated when needed.
 4. Helps to avoid duplicacy - keeeps state sikmpler and manageable.
 
+// Lifting State Up??
+
+1. It is a pattern in React where we move the State form "Child Component" to a comman "Parent Component", so that multiple child components can share and sync this state.
+
+2. It ensures that the state is manged at a higher level in the component hierarchy, allowing data to flow down as props.
+
+Use Case:-
+When we have 2 or more components that needs to share thge same state, you should lift the state up to their neerest common ancestor.
+Allowing the components to stay in sync and ensures the state is managed in a single place.
+
 <!-- ---------------------------- -->
