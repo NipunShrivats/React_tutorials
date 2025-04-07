@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./todo.css";
+import Time from "./Time";
 
 import { FaCheck } from "react-icons/fa6";
 import { MdDelete } from "react-icons/md";
@@ -31,6 +32,11 @@ export default function Todo() {
         <header className="header">
           <h1>Todo List</h1>
         </header>
+
+        <section>
+          <Time />
+        </section>
+
         <section className="form">
           <form action="" onSubmit={handleFormSubmit}>
             <div>
