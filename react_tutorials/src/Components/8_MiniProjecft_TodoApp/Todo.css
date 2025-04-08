@@ -110,6 +110,20 @@ body {
             }
         }
     }
+
+    .clearAll {
+        border: none;
+        border-radius: 10rem;
+        margin-top: 2rem;
+        font-size: 2rem;
+        padding: 1rem 4rem;
+        cursor: pointer;
+    }
+
+    .clearAll:active {
+        background-color: blue;
+        transition: all 0.3s ease-in-out;
+    }
 }
 
 .dateTime {

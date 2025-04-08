@@ -1,30 +1,30 @@
 import React, { useState } from "react";
 import "./todo.css";
 import Time from "./Time";
-
-import { FaCheck } from "react-icons/fa6";
-import { MdDelete } from "react-icons/md";
+import Form from "./Form";
+import List from "./List";
 
 export default function Todo() {
-  const [inputValue, setInputValue] = useState("");
   const [listData, setListData] = useState([]);
 
-  console.log(listData);
-
-  const handleInputChnage = (value) => {
-    setInputValue(value);
-  };
-  const handleFormSubmit = (event) => {
-    // 1. Avoid refresh
-    event.preventDefault();
-    // 2. In case empty return empty
+  const handleFormSubmit = (inputValue) => {
+    // In case empty return empty
     if (!inputValue) return;
-    // 3. If data is repeated return nothing
+    // If data is repeated return nothing
     if (listData.includes(inputValue)) return;
-    // 4. keep previous value intack while adding new value i.e inputvalue.
+    // keep previous value intack while adding new value i.e inputvalue.
     setListData((prev) => [...prev, inputValue]);
-    // 5. After value is added empty the input bar
-    setInputValue("");
+  };
+
+  // deletion
+  const handleDeleteTodo = (value) => {
+    let arr = listData.filter((ele) => ele !== value); // filter method will filter out which do not match
+    setListData(arr);
+  };
+
+  const handleCheck = (value) => {};
+  const handleClearAll = () => {
+    setListData([]);
   };
   return (
     <>
@@ -38,43 +38,28 @@ export default function Todo() {
         </section>
 
         <section className="form">
-          <form action="" onSubmit={handleFormSubmit}>
-            <div>
-              <input
-                type="text"
-                className="todo-input"
-                autoComplete="off"
-                value={inputValue}
-                onChange={(event) => handleInputChnage(event.target.value)}
-              />
-            </div>
-            <div>
-              <button type="submit" className="todo-btn">
-                Add
-              </button>
-            </div>
-          </form>
+          <Form onAddTodo={handleFormSubmit} />
         </section>
 
-        <section
-          className="myList"
-          style={{ padding: listData.length == 0 ? "0rem" : "2rem 4rem" }}
-        >
-          <ul>
+        <section className="myList">
+          <ul style={{ padding: listData.length == 0 ? "0rem" : "2rem 4rem" }}>
             {listData.map((data, index) => {
               return (
-                <li key={index} className="todo-item">
-                  <button className="check-btn">
-                    <FaCheck />
-                  </button>
-                  <span>{data}</span>
-                  <button className="del-btn">
-                    <MdDelete />
-                  </button>
-                </li>
+                <List
+                  key={index}
+                  data={data}
+                  handleDeleteTodo={handleDeleteTodo}
+                  handleCheckEle={handleCheck}
+                />
               );
             })}
           </ul>
+        </section>
+
+        <section>
+          <button className="clearAll" onClick={handleClearAll}>
+            Clear All
+          </button>
         </section>
       </section>
     </>
