@@ -1,13 +1,20 @@
 import React from "react";
 import { FaCheck } from "react-icons/fa6";
 import { MdDelete } from "react-icons/md";
-export default function List({ data, handleDeleteTodo, handleCheck }) {
+
+// import
+export default function List({
+  data,
+  handleDeleteTodo,
+  handleCheckedTodo,
+  checked,
+}) {
   return (
     <li className="todo-item">
-      <button className="check-btn" onClick={() => handleCheck(data)}>
+      <button className="check-btn" onClick={() => handleCheckedTodo(data)}>
         <FaCheck />
       </button>
-      <span>{data}</span>
+      <span className={checked ? "checkList" : "notCheckList"}>{data}</span>
       <button className="del-btn" onClick={() => handleDeleteTodo(data)}>
         <MdDelete />
       </button>

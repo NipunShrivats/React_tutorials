@@ -129,3 +129,11 @@ body {
 .dateTime {
     font-size: 2rem;
 }
+
+.checkList {
+    text-decoration: line-through;
+}
+
+.notCheckList {
+    text-decoration: none;
+}
