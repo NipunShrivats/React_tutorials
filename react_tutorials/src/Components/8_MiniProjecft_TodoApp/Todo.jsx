@@ -4,8 +4,17 @@ import Time from "./Time";
 import Form from "./Form";
 import List from "./List";
 
+const todosKey = "reactTodo";
+
 export default function Todo() {
-  const [listData, setListData] = useState([]);
+  const [listData, setListData] = useState(() => {
+    const rawTodos = localStorage.getItem(todosKey);
+    if (!rawTodos) {
+      return [];
+    } else {
+      return JSON.parse(rawTodos);
+    }
+  });
 
   const handleFormSubmit = (inputValue) => {
     const { id, content, checked } = inputValue;
@@ -24,7 +33,7 @@ export default function Todo() {
   };
 
   //adding local storage
-  localStorage.setItem("reactTodo", JSON.stringify(task));
+  localStorage.setItem(todosKey, JSON.stringify(listData));
 
   // deletion
   const handleDeleteTodo = (value) => {
