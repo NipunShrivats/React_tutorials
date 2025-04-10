@@ -23,6 +23,9 @@ export default function Todo() {
     setListData((prev) => [...prev, { id, content, checked }]);
   };
 
+  //adding local storage
+  localStorage.setItem("reactTodo", JSON.stringify(task));
+
   // deletion
   const handleDeleteTodo = (value) => {
     let arr = listData.filter((ele) => ele.content !== value); // filter method will filter out which do not match
