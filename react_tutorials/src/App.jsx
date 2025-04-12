@@ -26,6 +26,7 @@ import LiftingStateUp from "./Components/6_React_Hooks/1_React_State/LiftingStat
 import ToggleSwitch from "./Components/7_MiniProject_ToggleSwitch/ToggleSwitch";
 // -----------------------------------------------------
 import Todo from "./Components/8_MiniProjecft_ToDoApp/Todo";
+import ShotCircuit from "./Components/9_ShotCircuit_Evaluation/ShotCircuit";
 // -----------------------------------------------------
 
 export default function App() {
@@ -58,8 +59,10 @@ export default function App() {
       {/* <LiftingStateUp /> */}
       {/* ---------------------- 7. Mini Project - ToggleSwitch ---------------------- */}
       {/* <ToggleSwitch /> */}
-      {/* ---------------------- 8. 8_MiniProjecft_TodoApp ---------------------- */}
-      <Todo />
+      {/* ---------------------- 8. MiniProjecft_TodoApp ---------------------- */}
+      {/* <Todo /> */}
+      {/* ---------------------- 9. ShotCircuit_Evaluation ---------------------- */}
+      <ShotCircuit />
     </>
   );
 }
