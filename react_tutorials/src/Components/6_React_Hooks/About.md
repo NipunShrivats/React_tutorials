@@ -1,5 +1,13 @@
 Hooks - are the functions that helps to handle different events in React.
 
+1. lets u use different react features from the components
+2. starts with use---
+3. can only be used at the top level of your component
+4. Can only call hooks from react functional components or custom hooks.
+   can not call hooks from regular js functions or in class components.
+5. can create your own custom hooks usintg "use---", so react can identify them.
+6. Ensure hooks are called in same order, allows react to properly preserve them between re-renders.
+
 <!-- ---------------------------- -->
 
 <!-- 1. React States:- -->
