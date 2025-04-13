@@ -21,7 +21,7 @@ import EventsPropagation from "./Components/5_Event_Handling/EventsPropagation_3
 import ReactState from "./Components/6_React_Hooks/1_React_State/Main";
 import DerivedState from "./Components/6_React_Hooks/1_React_State/DerivedState";
 import LiftingStateUp from "./Components/6_React_Hooks/1_React_State/LiftingStateUp";
-import UseState_Challange from "./Components/6_React_Hooks/1_React_State/UseState_Challange";
+import Challange from "./Components/6_React_Hooks/1_React_State/Challange";
 // -----------------------------------------------------
 import ToggleSwitch from "./Components/7_MiniProject_ToggleSwitch/ToggleSwitch";
 // -----------------------------------------------------
@@ -57,7 +57,7 @@ export default function App() {
 
       {/* <DerivedState /> */}
       {/* <LiftingStateUp /> */}
-      <UseState_Challange />
+      <Challange />
       {/* ---------------------- 7. Mini Project - ToggleSwitch ---------------------- */}
       {/* <ToggleSwitch /> */}
       {/* ---------------------- 8. MiniProjecft_TodoApp ---------------------- */}

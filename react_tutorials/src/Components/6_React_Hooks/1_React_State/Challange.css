@@ -1,0 +1,35 @@
+.main-box {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    gap: 2rem;
+
+    .input-data {
+        /* border: 2px solid red; */
+        display: flex;
+        flex-direction: column;
+
+
+        input {
+            font-size: 2rem;
+        }
+    }
+
+    .button-box {
+        /* border: 2px solid red; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+
+        button {
+            font-size: 1.5rem;
+            padding: .8rem 2.5rem;
+            border-radius: 2rem;
+            cursor: pointer;
+        }
+    }
+}
