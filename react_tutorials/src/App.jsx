@@ -28,6 +28,10 @@ import ToggleSwitch from "./Components/7_MiniProject_ToggleSwitch/ToggleSwitch";
 import Todo from "./Components/8_MiniProjecft_ToDoApp/Todo";
 import ShotCircuit from "./Components/9_ShotCircuit_Evaluation/ShotCircuit";
 // -----------------------------------------------------
+import Controlled from "./Components/10_React_Forms/1_Controlled_Uncontrolled/Controlled";
+import Uncontrolled from "./Components/10_React_Forms/1_Controlled_Uncontrolled/Uncontrolled";
+
+// -----------------------------------------------------
 
 export default function App() {
   return (
@@ -57,13 +61,17 @@ export default function App() {
 
       {/* <DerivedState /> */}
       {/* <LiftingStateUp /> */}
-      <Challange />
+      {/* <Challange /> */}
       {/* ---------------------- 7. Mini Project - ToggleSwitch ---------------------- */}
       {/* <ToggleSwitch /> */}
       {/* ---------------------- 8. MiniProjecft_TodoApp ---------------------- */}
       {/* <Todo /> */}
       {/* ---------------------- 9. ShotCircuit_Evaluation ---------------------- */}
       {/* <ShotCircuit /> */}
+      {/* ---------------------- 10. Forms ---------------------- */}
+      {/* ---------- a. Controlled_Uncontrolled ----------*/}
+      {/* <Controlled /> */}
+      {/* <Uncontrolled /> */}
     </>
   );
 }
