@@ -30,6 +30,7 @@ import ShotCircuit from "./Components/9_ShotCircuit_Evaluation/ShotCircuit";
 // -----------------------------------------------------
 import Controlled from "./Components/10_React_Forms/1_Controlled_Uncontrolled/Controlled";
 import Uncontrolled from "./Components/10_React_Forms/1_Controlled_Uncontrolled/Uncontrolled";
+import HowNotTo from "./Components/10_React_Forms/2_Registration_forms/HowNotTo";
 
 // -----------------------------------------------------
 
@@ -72,6 +73,8 @@ export default function App() {
       {/* ---------- a. Controlled_Uncontrolled ----------*/}
       {/* <Controlled /> */}
       {/* <Uncontrolled /> */}
+      {/* ---------- b. Registration form ----------*/}
+      <HowNotTo />
     </>
   );
 }
