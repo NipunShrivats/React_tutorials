@@ -1,10 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Style.css";
 
-export default function HowNotTo() {
+export default function HowTo() {
+  //   const [firstName, setFirstName] = useState("");
+  //   const [lastName, setLastName] = useState("");
+  //   const [email, setEmail] = useState("");
+  //   const [password, setPassword] = useState("");
+  //   const [phoneNumber, setPhoneNumber] = useState("");
+
+  const [user, setUser] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    password: "",
+    phoneNumber: "",
+  });
+
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+
+    setUser((prev) => ({ ...prev, [name]: value }));
+  };
+  const handleFormSubmit = (event) => {
+    event.preventDefault();
+    console.log(user);
+  };
   return (
     <>
-      <form action="">
+      <form action="" onSubmit={handleFormSubmit}>
         <div className="container">
           <h1>Sign Up</h1>
           <p>Please fill in this form to create an account</p>
@@ -18,6 +41,8 @@ export default function HowNotTo() {
               name="firstName"
               placeholder="Enter firstname"
               required
+              value={user.firstName}
+              onChange={handleInputChange}
             />
           </div>
 
@@ -30,6 +55,8 @@ export default function HowNotTo() {
               name="lastName"
               placeholder="Enter lastname"
               required
+              value={user.lastName}
+              onChange={handleInputChange}
             />
           </div>
           <div className="data-field">
@@ -41,6 +68,8 @@ export default function HowNotTo() {
               name="email"
               placeholder="Enter Email"
               required
+              value={user.email}
+              onChange={handleInputChange}
             />
           </div>
 
@@ -53,6 +82,8 @@ export default function HowNotTo() {
               name="password"
               placeholder="Enter password"
               required
+              value={user.password}
+              onChange={handleInputChange}
             />
           </div>
 
@@ -60,7 +91,14 @@ export default function HowNotTo() {
             <label htmlFor="phone">
               <b>phone Number</b>
             </label>
-            <input type="phone" name="phone" placeholder="+91 ..." required />
+            <input
+              type="tel"
+              name="phoneNumber"
+              placeholder="+91 ..."
+              required
+              value={user.phoneNumber}
+              onChange={handleInputChange}
+            />
           </div>
 
           <p>

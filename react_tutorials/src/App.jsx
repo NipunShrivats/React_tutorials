@@ -26,12 +26,15 @@ import Challange from "./Components/6_React_Hooks/1_React_State/Challange";
 import ToggleSwitch from "./Components/7_MiniProject_ToggleSwitch/ToggleSwitch";
 // -----------------------------------------------------
 import Todo from "./Components/8_MiniProjecft_ToDoApp/Todo";
-import ShotCircuit from "./Components/9_ShotCircuit_Evaluation/ShotCircuit";
 // -----------------------------------------------------
-import Controlled from "./Components/10_React_Forms/1_Controlled_Uncontrolled/Controlled";
-import Uncontrolled from "./Components/10_React_Forms/1_Controlled_Uncontrolled/Uncontrolled";
-import HowNotTo from "./Components/10_React_Forms/2_Registration_forms/HowNotTo";
-
+import Todo from "./Components/9_Spread_Operator/Main";
+// -----------------------------------------------------
+import ShotCircuit from "./Components/10_ShotCircuit_Evaluation/ShotCircuit";
+// -----------------------------------------------------
+import Controlled from "./Components/11_React_Forms/1_Controlled_Uncontrolled/Controlled";
+import Uncontrolled from "./Components/11_React_Forms/1_Controlled_Uncontrolled/Uncontrolled";
+import HowNotTo from "./Components/11_React_Forms/2_Registration_forms/HowNotTo";
+import HowTo from "./Components/11_React_Forms/2_Registration_forms/HowTo";
 // -----------------------------------------------------
 
 export default function App() {
@@ -67,14 +70,15 @@ export default function App() {
       {/* <ToggleSwitch /> */}
       {/* ---------------------- 8. MiniProjecft_TodoApp ---------------------- */}
       {/* <Todo /> */}
-      {/* ---------------------- 9. ShotCircuit_Evaluation ---------------------- */}
+      {/* ---------------------- 10. ShotCircuit_Evaluation ---------------------- */}
       {/* <ShotCircuit /> */}
-      {/* ---------------------- 10. Forms ---------------------- */}
+      {/* ---------------------- 11. Forms ---------------------- */}
       {/* ---------- a. Controlled_Uncontrolled ----------*/}
       {/* <Controlled /> */}
       {/* <Uncontrolled /> */}
       {/* ---------- b. Registration form ----------*/}
-      <HowNotTo />
+      {/* <HowNotTo /> */}
+      <HowTo />
     </>
   );
 }
