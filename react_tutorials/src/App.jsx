@@ -27,7 +27,7 @@ import ToggleSwitch from "./Components/7_MiniProject_ToggleSwitch/ToggleSwitch";
 // -----------------------------------------------------
 import Todo from "./Components/8_MiniProjecft_ToDoApp/Todo";
 // -----------------------------------------------------
-import Todo from "./Components/9_Spread_Operator/Main";
+import SpreadOperator from "./Components/9_Spread_Operator/Main";
 // -----------------------------------------------------
 import ShotCircuit from "./Components/10_ShotCircuit_Evaluation/ShotCircuit";
 // -----------------------------------------------------
@@ -62,7 +62,6 @@ export default function App() {
       {/* ---------- a. State ----------*/}
       {/* <ReactState /> */}
       {/* <SiblingComponent /> */}
-
       {/* <DerivedState /> */}
       {/* <LiftingStateUp /> */}
       {/* <Challange /> */}
@@ -70,6 +69,7 @@ export default function App() {
       {/* <ToggleSwitch /> */}
       {/* ---------------------- 8. MiniProjecft_TodoApp ---------------------- */}
       {/* <Todo /> */}
+      <SpreadOperator />
       {/* ---------------------- 10. ShotCircuit_Evaluation ---------------------- */}
       {/* <ShotCircuit /> */}
       {/* ---------------------- 11. Forms ---------------------- */}
@@ -78,7 +78,7 @@ export default function App() {
       {/* <Uncontrolled /> */}
       {/* ---------- b. Registration form ----------*/}
       {/* <HowNotTo /> */}
-      <HowTo />
+      {/* <HowTo /> */}
     </>
   );
 }
